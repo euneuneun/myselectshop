@@ -19,7 +19,7 @@ public class ProductController {
         return productService.createProduct(requestDto);
     }
 
-    @PostMapping("/products/{id}")
+    @PutMapping("/products/{id}")
     public ProductResponseDto updateProduct(@PathVariable Long id, @RequestBody ProductMypriceRequestDto requestDto){
         return productService.updateProduct(id,requestDto);
 
